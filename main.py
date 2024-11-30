@@ -625,21 +625,51 @@ def upper(x):
 
 text1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ/1234567890//HELLO WORLD.//1+1=2/1-1=0/1X1=1/1d1=1//1+1=2... OR IS IT 20?!?/SYMBOLS: :;,.?![]lrqwghjk/GRAPHIC: ░▒▓█/──/│/│//┌┬┐/├┼┤/└┴┘/│ │/├┼┤/│ │/"
 text2 = "TYPE SOMETHING:/" # long ^^^                                                       it has not ended yet??                                                          Finally..
-text3 = "PRESS 1 OR 2"
-var = text3
+text3v1 = "CHOOSE./1 TECH DEMO g-/2 TEXT EDITOR/3 PAINT PROGRAM"
+text3v2 = "CHOOSE./1 TECH DEMO/2 TEXT EDITOR g-/3 PAINT PROGRAM"
+text3v3 = "CHOOSE./1 TECH DEMO/2 TEXT EDITOR/3 PAINT PROGRAM g-"
+var = text3v1
 alt_mode = "no"
 ctr_mode = "no"
 display_text_dis = "yes"
 Rmode = False
+press = None  # Ensure press is defined before entering the loop
+
 while True:
     chatter.clear(chatter.black)
     if display_text_dis == "yes":
         display_text(0, 9, var, chatter.green, scale=3)
     chatter.display_screen()
-    press = chatter.input()
+    while True:
+        chatter.clear(chatter.black)
+        chatterinput = chatter.input()
+        display_text(0, 9, var, chatter.green, scale=3)
+        chatter.display_screen()
+        if chatterinput == "down":
+            if var == text3v1:
+                var = text3v2
+            elif var == text3v2:
+                var = text3v3
+            elif var == text3v3:
+                var = text3v1
+        elif chatterinput == "up":
+            if var == text3v1:
+                var = text3v3
+            elif var == text3v2:
+                var = text3v1
+            elif var == text3v3:
+                var = text3v2
+        elif chatterinput == "return":
+            if var == text3v1:
+                press = "1"
+            elif var == text3v2:
+                press = "2"
+            elif var == text3v3:
+                press = "3"
+            break
     if press == "1":
-        display_text_dis = "yes"
         chatter.audio(400, 0.1)
+        display_text_dis = "yes"
         var = text1
     if press == "2":
         display_text_dis = "yes"
@@ -742,6 +772,7 @@ while True:
                 ctr_mode = "no"
                 chatter.audio(500, 0.1)
     if press == "3":
+        chatter.audio(400, 0.1)
         R, G, B = chatter.green
         color = R, G, B
         chatter.clear(chatter.black)

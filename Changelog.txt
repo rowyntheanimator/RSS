@@ -1,0 +1,11 @@
+Change Log
+
+Version 1.0.1 (11/30/2024)
+
+Added interactive menu: The menu now allows users to scroll between three different options using the "up" and "down" commands, enhancing navigation and user experience.
+
+
+
+Version 1.0.0 (11/29/2024)
+
+Initial release with basic functionality.
