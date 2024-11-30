@@ -2,6 +2,7 @@ Quick Warning
 Before running this program, please ensure you have Python installed, along with the following extensions:
 
 pygame
+
 numpy
 
 To install these extensions, open your console and use the following commands:
@@ -19,4 +20,5 @@ Click the yellow button that says Download Python.
 
 
 RSS V1.0.1
+
 Rowyn Standard Script
