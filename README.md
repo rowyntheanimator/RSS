@@ -1,16 +1,18 @@
-Hello this is a quick warning. Please read this before while you ever run this program as of you must have Python installed along with these following extensions.
+Quick Warning
+Before running this program, please ensure you have Python installed, along with the following extensions:
 
 pygame
 numpy
 
-To import them, you can use these commands
+To install these extensions, open your console and use the following commands:
+
 
 pip install pygame
 
 pip install numpy
 
-These commands do work on both operating systems, Linux and windows. I know there are others, but they also work with them too. Just opened up whatever console window that you use and type in these commands. If you do not have python installed then install it here
+These commands work on both Linux and Windows operating systems. Other operating systems should work as well. Simply open your console window and type in these commands.
 
-https://www.python.org/downloads/
+If you don't have Python installed, you can download it from here: https://www.python.org/downloads/
 
-And click the yellow button that says download Python
+Click the yellow button that says Download Python.
