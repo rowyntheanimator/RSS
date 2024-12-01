@@ -1,7 +1,13 @@
 Quick Warning
 Before running this program, please ensure you have Python installed, along with the following extensions:
+## Prequisites
+- Python: Go to the [python installation page](https://www.python.org/downloads/) and click `Download Python`. When you install python, make sure the box labeled `Add Python to PATH` is checked.
 
 pygame
+## Installation
+1. Install python if you haven't already from https://www.python.org/downloads/
+2. Open your terminal and continue to step 3
+3. Install packages using `pip install -r requirements.txt` on Windows or `pip3 install -r requirements.txt` on MacOS/Linux
 
 numpy
 
@@ -18,9 +24,7 @@ If you don't have Python installed, you can download it from here: https://www.p
 
 Click the yellow button that says Download Python.
 
+You can run RSS by executing `python main.py`.
 
 
-
-RSS V1.0.1
-
-Rowyn Standard Script
+wrote by dieperdev
